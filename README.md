@@ -15,6 +15,8 @@ data = csv.reader(f)
 next(data)
 
 # 펜더믹의 시작일 찾기 
+
+
 for row in data :
     if row[4] == '' :
         row[4] = 0
@@ -37,6 +39,8 @@ for row in data :
 print ("펜데믹 시작일 : %s"%stdate)        
 
 # 펜데믹 종료일 찾기 
+
+
 days = 0
 if stdate  != '' :
     for row in data :
