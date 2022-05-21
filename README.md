@@ -18,7 +18,8 @@ next(data)
 for row in data :
     if row[4] == '' :
         row[4] = 0
-         row[4] = float(row[4])
+       
+       row[4] = float(row[4])
     
     if days == 5 : 
         break
@@ -41,6 +42,8 @@ if stdate  != '' :
     for row in data :
         if row[0] <= stdate :
             continue
+       
+       
        row[4] = float(row[4])
         if row[4] >= 100 :
             days = 0
